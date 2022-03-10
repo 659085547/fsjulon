@@ -1,0 +1,130 @@
+/*global css*/
+*{font-family: "Microsoft YaHei","微软雅黑","Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB",Arial,sans-serif;-webkit-text-size-adjust:none;-webkit-tap-highlight-color: transparent;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,p,form,fieldset,input,textarea,blockquote{padding:0;margin:0;font-size:14px;color:#333;}
+h1,h2,h3,h4,h5,h6,th{font-weight:normal;}
+li{list-style-type:none;}
+img{border:none;min-width:1px;}
+table{border-collapse:collapse;}
+input,select,textarea{outline:none;background:none;border:none;}
+select::-ms-expand{display:none;}
+select1{
+	border: none;
+	outline: none;
+	/*将默认的select选择框样式清除*/
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	-ms-appearance:none;
+	/*在选择框的最右侧中间显示小箭头图片*/
+	/*background: url(/images/arrow.png) no-repeat scroll right center transparent;*/
+}
+
+/*常用类*/
+.over{overflow:hidden;}
+.auto{overflow:auto;}
+.m-pic{text-align:center;display:block;font-size:0;}
+.m-pic b{display:inline-block;height:100%;vertical-align:middle;}
+.m-pic img{vertical-align:middle;max-width:100%;max-height:100%;}
+.b-pic{overflow:hidden;}
+.b-pic img{-webkit-transition:0.5s;-moz-transition:0.5s;transition:0.5s;}
+.b-pic:hover img{-webkit-transform:scale(1.06);-moz-transform:scale(1.06);transform:scale(1.06);}
+.i-pic{overflow:hidden;font-size:0;background:#ccc;}
+.i-pic img{width:100%;min-height:100%;}
+.r-pic{overflow:hidden;display:inline-block;position:relative;}
+.r-pic:before{border-left:1px solid transparent;border-top:1px solid transparent;left:0;top:0;}
+.r-pic:after{border-right:1px solid transparent;border-bottom:1px solid transparent;right:0;bottom:0;}
+.r-pic:before,
+.r-pic:after{position:absolute;height:0;width:0;z-index:2;-webkit-transition:0.5s;-moz-transition:0.5s;transition:0.5s;content:'';display:block;pointer-events:none;z-index:122;}
+.r-pic:hover:before{height:100%;width:100%;border-color:#f9c045;}
+.r-pic:hover:after{height:100%;width:100%;border-color:#f9c045;}
+.text-left{text-align:left;}
+.text-right{text-align:right;}
+.text-center{text-align:center;}
+.text-over{text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+.text-line{overflow:hidden;text-overflow:ellipsis;display:-webkit-box !important;-webkit-box-orient:vertical;-webkit-line-clamp:2;}
+.text-line.line3{-webkit-line-clamp:3;}
+.text-line.line4{-webkit-line-clamp:4;}
+.text-line.line5{-webkit-line-clamp:5;}
+.nowrap,[nowrap]{white-space:nowrap;}
+.break{white-space:normal;word-break:break-all;}
+.v-middle{vertical-align:middle;}
+.v-top{vertical-align:top;}
+.v-bottom{vertical-align:bottom;}
+.border-box{-moz-box-sizing:border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+.trans{-webkit-transition:all 300ms ease 0s;transition:all 300ms ease 0s;outline:none;}
+.pointer{cursor:pointer !important;}
+.upper{text-transform:uppercase;}
+.lower{text-transform:lowercase;}
+.maxh{height:100%;}
+.maxw{width:100%;}
+
+[relative]{position: relative;}
+[absolute]{position: absolute;}
+[absolute][max]{left: 0;bottom: 0;top: 0;right: 0;}
+
+/*padding*/
+.clear{margin:0px auto;clear:both;height:0px;font-size:0px;overflow:hidden;position: relative;}
+.clear.a{top: -54px;display:block;height: 1px;width: 100%;position: relative;}
+.clean{zoom:1;}
+.clean:after,
+.clean:before{content:'';display:table;}
+.clean:after{clear:both;}
+
+.blank3{margin:0px auto;clear:both;height:3px;font-size:1px;overflow:hidden;}
+.blank6{margin:0px auto;clear:both;height:6px;font-size:1px;overflow:hidden;}
+.blank9{margin:0px auto;clear:both;height:9px;font-size:1px;overflow:hidden;}
+.blank12{margin:0px auto;clear:both;height:12px;font-size:1px;overflow:hidden;}
+.blank15{margin:0px auto;clear:both;height:15px;font-size:1px;overflow:hidden;}
+.blank20{margin:0px auto;clear:both;height:20px;font-size:1px;overflow:hidden;}
+.blank25{margin:0px auto;clear:both;height:25px;font-size:1px;overflow:hidden;}
+.blank30{margin:0px auto;clear:both;height:30px;font-size:1px;overflow:hidden;}
+
+/*a*/
+a{color:#333;text-decoration:none;}
+a.red{color:red;text-decoration:none;}
+a.red:hover{color:red;text-decoration:underline;}
+a *{text-decoration:none;}
+a:hover *{text-decoration:none;}
+
+/*turn_page*/
+#turn_page{ width:100%; height:46px; line-height:44px; text-align:center; overflow:hidden; margin-top:5%;}
+#turn_page img{ width:100%;}
+#turn_page form{ display:inline-block;}
+#turn_page span{ display:inline-block; vertical-align:top; font-size:0; color:#666; margin:0 0.3%;}
+#turn_page font{ display:inline-block; font-size:14px; background:#fff; color:#666;}
+#turn_page .page_input{ width:44px; height:44px; font-size:14px; color:#757575; border:1px solid #e5e5e5;}
+#turn_page .page_submit{ width:78px; height:44px; cursor:pointer; font-size:14px; color:#757575; border:1px solid #e5e5e5;}
+#turn_page .page_button{ width:44px; height:44px; display:inline-block; background:#fff; font-size:14px; color:#757575; border:1px solid #e5e5e5;}
+#turn_page .page_button.in{ width:78px;}
+#turn_page .page_noclick{ width:44px; height:44px; display:inline-block; background:#fff; font-size:14px; color:#757575; border:1px solid #e5e5e5;}
+#turn_page .page_noclick.in{ width:78px;}
+#turn_page .page_item_current{ width:44px; height:44px; background:#145239; color:#fff; border:1px solid #145239;}
+#turn_page .page_item{ width:44px; height:44px; display:inline-block; background:#fff; font-size:14px; color:#757575; border:1px solid #e5e5e5;}
+
+@media only screen and (max-width:760px){
+	#turn_page{ line-height:40px; line-height:38px;}
+	#turn_page .page_input{ width:38px; height:38px;}
+	#turn_page .page_submit{ width:70px; height:38px;}
+	#turn_page .page_button{ width:38px; height:38px;}
+	#turn_page .page_button.in{ width:70px; height:38px;}
+	#turn_page .page_noclick{ width:38px; height:38px;}
+	#turn_page .page_noclick.in{ width:70px;}
+	#turn_page .page_item_current{ width:38px; height:38px;}
+	#turn_page .page_item{ width:38px; height:38px;}
+	#turn_page label{ display:none;}
+}
+
+@media only screen and (max-width:460px){
+	#turn_page{ margin-top:30px;}
+	#turn_page span{ margin:0 0.6%;}
+	#turn_page font{ font-size:10px;}
+	#turn_page{ height:24px; line-height:24px;}
+	#turn_page .page_input{ width:22px; height:22px; font-size:10px;}
+	#turn_page .page_submit{ width:40px; height:22px; font-size:10px;}
+	#turn_page .page_button{ width:22px; height:22px; font-size:10px;}
+	#turn_page .page_button.in{ width:40px; height:22px; font-size:10px;}
+	#turn_page .page_noclick{ width:22px; height:22px; font-size:10px;}
+	#turn_page .page_noclick.in{ width:40px;}
+	#turn_page .page_item_current{ width:22px; height:22px;}
+	#turn_page .page_item{ width:22px; height:22px; font-size:10px;}
+}

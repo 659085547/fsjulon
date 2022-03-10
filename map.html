@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="screen-orientation" content="portrait">
+	<meta name="x5-orientation" content="portrait">
+	<link rel='shortcut icon' href='https://www.airland1966.com/u_file/photo/20191217/aa4944aace.png'>
+<meta name="keywords" content="雅兰">
+<meta name="description" content="雅兰">
+<title>AIRLAND雅兰 官方网站——让生活多一点幸福</title>
+	<link href='font/font-awesome/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+<link href='font/iconfont/iconfont.css' rel='stylesheet' type='text/css'>
+<link href='static/themes/default/css/global.css' rel='stylesheet' type='text/css'>
+<link href='static/themes/default/css/style.css' rel='stylesheet' type='text/css'>
+<script type='text/javascript' src='static/js/jq.min.js'></script>
+<script type='text/javascript' src='static/js/svg.js'></script>
+<script type='text/javascript' src='static/js/zoom.js'></script>
+<script type='text/javascript' src='static/js/plugin/jext/jext.js'></script>
+<link href='static/js/plugin/swiper-4.5/swiper.css' rel='stylesheet' type='text/css'>
+<script type='text/javascript' src='static/js/plugin/swiper-4.5/swiper.js'></script>
+<link href='static/themes/default/css/jquery.fullPage.css' rel='stylesheet' type='text/css'>
+<script type='text/javascript' src='static/themes/default/js/jquery.fullPage.min.js'></script>
+<link href='static/js/plugin/circliful/jquery.circliful.css' rel='stylesheet' type='text/css'>
+<script type='text/javascript' src='static/js/plugin/circliful/jquery.circliful.min.js'></script>
+<link href='static/themes/default/css/wow.css' rel='stylesheet' type='text/css'>
+<script type='text/javascript' src='static/themes/default/js/wow.min.js'></script>
+	<script>
+    	function getBrowserInfo() {
+			var agent = navigator.userAgent.toLowerCase();
+			var regStr_ie = /msie [\d.]+;/gi;
+			var regStr_ff = /firefox\/[\d.]+/gi
+			var regStr_chrome = /chrome\/[\d.]+/gi;
+			var regStr_saf = /safari\/[\d.]+/gi;
+			var isIE = agent.indexOf("compatible") > -1 && agent.indexOf("msie" > -1); //判断是否IE<11浏览器  
+			var isEdge = agent.indexOf("edge") > -1 && !isIE; //判断是否IE的Edge浏览器  
+			var isIE11 = agent.indexOf('trident') > -1 && agent.indexOf("rv:11.0") > -1;
+			if (isIE) {
+				var reIE = new RegExp("msie (\\d+\\.\\d+);");
+				reIE.test(agent);
+				var fIEVersion = parseFloat(RegExp["$1"]);
+				if (fIEVersion <= 9) {
+					return false;
+				}
+			}else if(isEdge){
+				return false;
+			}
+			var elem = document.createElement('canvas');
+			return !!(elem.getContext && elem.getContext('2d'));
+		}
+		if(!getBrowserInfo()){alert('浏览器版本过低');}
+    </script>
+</head><body>
+<div id="map" class="map"></div>
+<style>
+.anchorBL{display:none;}
+body,html,.map{height: 100%;width: 100%;}
+</style>
+<script type="text/javascript" src="api.js"></script>
+<script type="text/javascript">
+	// 百度地图API功能
+	var map = new BMap.Map("map");
+	// map.centerAndZoom(new BMap.Point(117.269945,31.86713), 13);
+	map.centerAndZoom('广东省江门市',12);
+	map.enableScrollWheelZoom(true);
+	var myGeo = new BMap.Geocoder();
+	function geocodeSearch(add){
+		myGeo.getPoint(add, function(point){
+			if (point) {
+				//map.centerAndZoom(point, 9);
+				//var address = new BMap.Point(point.lng, point.lat);
+				var marker = new BMap.Marker(point);
+				map.addOverlay(marker);
+				//addMarker(address,new BMap.Label(add,{offset:new BMap.Size(20,-10)}));
+				marker.addEventListener("click", function(){          
+					baidumapInfoWindow(map, add, point);
+				});
+			}else{
+				alert("您选择地址没有解析到结果!");
+			}
+		}, "中国");
+	}
+	// 编写自定义函数,创建标注
+	function addMarker(point,label){
+		var marker = new BMap.Marker(point);
+		map.addOverlay(marker);
+		marker.setLabel(label);
+	}
+	
+	// 很普通的弹窗
+	function baidumapInfoWindow(map, add, point){
+		var opts = {
+			title : '',
+		}
+		map.openInfoWindow(new BMap.InfoWindow(add, opts), point);
+	}
+
+	</script>
+</body>
+</html>

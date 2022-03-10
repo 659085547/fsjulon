@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="screen-orientation" content="portrait">
+	<meta name="x5-orientation" content="portrait">
+	<link rel='shortcut icon' href='https://www.airland1966.com/u_file/photo/20191217/aa4944aace.png'>
+<meta name="keywords" content="雅兰新闻">
+<meta name="description" content="雅兰新闻">
+<title>雅兰新闻</title>
+	<link href='../../font/font-awesome/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+<link href='../../font/iconfont/iconfont.css' rel='stylesheet' type='text/css'>
+<link href='../../static/themes/default/css/global.css' rel='stylesheet' type='text/css'>
+<link href='../../static/themes/default/css/style.css' rel='stylesheet' type='text/css'>
+<script type='text/javascript' src='../../static/js/jq.min.js'></script>
+<script type='text/javascript' src='../../static/js/svg.js'></script>
+<script type='text/javascript' src='../../static/js/zoom.js'></script>
+<script type='text/javascript' src='../../static/js/plugin/jext/jext.js'></script>
+<link href='../../static/js/plugin/swiper-4.5/swiper.css' rel='stylesheet' type='text/css'>
+<script type='text/javascript' src='../../static/js/plugin/swiper-4.5/swiper.js'></script>
+<link href='../../static/themes/default/css/jquery.fullPage.css' rel='stylesheet' type='text/css'>
+<script type='text/javascript' src='../../static/themes/default/js/jquery.fullPage.min.js'></script>
+<link href='../../static/js/plugin/circliful/jquery.circliful.css' rel='stylesheet' type='text/css'>
+<script type='text/javascript' src='../../static/js/plugin/circliful/jquery.circliful.min.js'></script>
+<link href='../../static/themes/default/css/wow.css' rel='stylesheet' type='text/css'>
+<script type='text/javascript' src='../../static/themes/default/js/wow.min.js'></script>
+	<script>
+    	function getBrowserInfo() {
+			var agent = navigator.userAgent.toLowerCase();
+			var regStr_ie = /msie [\d.]+;/gi;
+			var regStr_ff = /firefox\/[\d.]+/gi
+			var regStr_chrome = /chrome\/[\d.]+/gi;
+			var regStr_saf = /safari\/[\d.]+/gi;
+			var isIE = agent.indexOf("compatible") > -1 && agent.indexOf("msie" > -1); //判断是否IE<11浏览器  
+			var isEdge = agent.indexOf("edge") > -1 && !isIE; //判断是否IE的Edge浏览器  
+			var isIE11 = agent.indexOf('trident') > -1 && agent.indexOf("rv:11.0") > -1;
+			if (isIE) {
+				var reIE = new RegExp("msie (\\d+\\.\\d+);");
+				reIE.test(agent);
+				var fIEVersion = parseFloat(RegExp["$1"]);
+				if (fIEVersion <= 9) {
+					return false;
+				}
+			}else if(isEdge){
+				return false;
+			}
+			var elem = document.createElement('canvas');
+			return !!(elem.getContext && elem.getContext('2d'));
+		}
+		if(!getBrowserInfo()){alert('浏览器版本过低');}
+    </script>
+</head><body>
+<div id="warp">
+	<div id="header-block"></div><div id="header">
+	<div class="cw1800 clear_both fz0">
+		<div class="target fl hide"><img src="../../images/img123.png" alt=""></div>
+		<div class="logo fl fz0"><a href="../../index.html"><img src="../../u_file/photo/20191212/7aaf8f3df4.png" alt=""></a></div>
+		<div class="nav inline-block clear_both">
+							<div class="list fl  none">
+					<a href="../../index.html" class="text-one fz14">首页</a>
+									</div>
+							<div class="list fl  ">
+					<a href="../../history/index.html" class="text-one fz14">关于雅兰</a>
+											<div class="two text-left clear_both to">
+							<div class="two-left fl" 0="">
+																	<a href="../../history/index.html" class="slide fz14 inline-block border-box on">发展历史<i class="trans inline-block"></i></a>
+																	<a href="../../honor/index.html" class="slide fz14 inline-block border-box ">荣誉资质<i class="trans inline-block"></i></a>
+																	<a href="../../culture/index.html" class="slide fz14 inline-block border-box ">企业文化<i class="trans inline-block"></i></a>
+																	<a href="../../join/index.html" class="slide fz14 inline-block border-box ">加入我们<i class="trans inline-block"></i></a>
+															</div>
+                            						</div>
+									</div>
+							<div class="list fl on ">
+					<a href="../index.html" class="text-one fz14">新闻中心</a>
+											<div class="two text-left clear_both to">
+							<div class="two-left fl" 0="">
+																	<a href="index.html" class="slide fz14 inline-block border-box on">雅兰新闻<i class="trans inline-block"></i></a>
+																	<a href="../i-2/index.html" class="slide fz14 inline-block border-box ">床垫资讯<i class="trans inline-block"></i></a>
+																	<a href="../i-3/index.html" class="slide fz14 inline-block border-box ">视频专区<i class="trans inline-block"></i></a>
+															</div>
+                            						</div>
+									</div>
+							<div class="list fl  ">
+					<a href="../../sleep-institute/i-1/index.html" class="text-one fz14">睡眠研究院</a>
+											<div class="two text-left clear_both to">
+							<div class="two-left fl" 0="">
+																	<a href="../../sleep-institute/i-1/index.html" class="slide fz14 inline-block border-box on">如何选好床垫<i class="trans inline-block"></i></a>
+																	<a href="../../sleep-institute/i-2/index.html" class="slide fz14 inline-block border-box ">睡眠生命科学<i class="trans inline-block"></i></a>
+																	<a href="../../sleep-institute/i-3/index.html" class="slide fz14 inline-block border-box ">全球五星酒店供应<i class="trans inline-block"></i></a>
+																	<a href="../../sleep-institute/i-4/index.html" class="slide fz14 inline-block border-box ">雅兰检测研究中心<i class="trans inline-block"></i></a>
+															</div>
+                            						</div>
+									</div>
+							<div class="list fl  ">
+					<a href="../../brand/index.html" class="text-one fz14">产品中心</a>
+											<div class="two text-left clear_both ">
+							<div class="two-left fl" 0="">
+																	<a href="../../products/i-6/index.html" class="slide fz14 inline-block border-box on">雅兰床垫<i class="trans inline-block"></i></a>
+																	<a href="../../products/i-7/index.html" class="slide fz14 inline-block border-box ">雅兰家纺<i class="trans inline-block"></i></a>
+																	<a href="../../products/i-9/index.html" class="slide fz14 inline-block border-box ">雅兰A|DESIGN<i class="trans inline-block"></i></a>
+																	<a href="../../products/i-8/index.html" class="slide fz14 inline-block border-box ">斯丽比迪<i class="trans inline-block"></i></a>
+																	<a href="../../products/i-11/index.html" class="slide fz14 inline-block border-box ">造梦者<i class="trans inline-block"></i></a>
+															</div>
+                                                            <div class="two-right fr">
+                                                                            <a href="../../products/i-6/index.html" class="slide inline-block on">
+                                            <div class="img "><img src="../../u_file/photo/20190906/30ddf76c6f.jpg" alt=""></div>
+                                            <div class="content border-box">
+                                                <div class="title fz22">雅兰床垫</div>
+                                                <div class="brief fz12"></div>
+                                            </div>
+                                        </a>
+                                                                            <a href="../../products/i-7/index.html" class="slide inline-block ">
+                                            <div class="img "><img src="../../u_file/photo/20190906/144765e3ca.jpg" alt=""></div>
+                                            <div class="content border-box">
+                                                <div class="title fz22">雅兰家纺</div>
+                                                <div class="brief fz12"></div>
+                                            </div>
+                                        </a>
+                                                                            <a href="../../products/i-9/index.html" class="slide inline-block ">
+                                            <div class="img "><img src="../../u_file/photo/20190906/9fc8780ef3.jpg" alt=""></div>
+                                            <div class="content border-box">
+                                                <div class="title fz22">雅兰A|DESIGN</div>
+                                                <div class="brief fz12"></div>
+                                            </div>
+                                        </a>
+                                                                            <a href="../../products/i-8/index.html" class="slide inline-block ">
+                                            <div class="img "><img src="../../u_file/photo/20190906/6ce347cbd7.jpg" alt=""></div>
+                                            <div class="content border-box">
+                                                <div class="title fz22">斯丽比迪</div>
+                                                <div class="brief fz12"></div>
+                                            </div>
+                                        </a>
+                                                                            <a href="../../products/i-11/index.html" class="slide inline-block ">
+                                            <div class="img "><img src="../../u_file/photo/20190906/4b7a94ca02.jpg" alt=""></div>
+                                            <div class="content border-box">
+                                                <div class="title fz22">造梦者</div>
+                                                <div class="brief fz12"></div>
+                                            </div>
+                                        </a>
+                                                                    </div>
+                            						</div>
+									</div>
+							<div class="list fl  ">
+					<a href="javascript:;" class="text-one fz14" target='_blank'>雅兰商城</a>
+											<div class="two text-left clear_both to">
+							<div class="two-left fl" 0="">
+																	<a href="javascript:;" target='_blank' class="slide fz14 inline-block border-box on">雅兰京东旗舰店<i class="trans inline-block"></i></a>
+																	<a href="javascript:;" target='_blank' class="slide fz14 inline-block border-box ">雅兰天猫旗舰店<i class="trans inline-block"></i></a>
+															</div>
+                            						</div>
+									</div>
+							<div class="list fl  ">
+					<a href="../../merchants-joining/i-1/index.html" class="text-one fz14">招商加盟</a>
+											<div class="two text-left clear_both to">
+							<div class="two-left fl" 0="">
+																	<a href="../../merchants-joining/i-1/index.html" class="slide fz14 inline-block border-box on">加盟优势<i class="trans inline-block"></i></a>
+																	<a href="../../merchants-joining/i-2/index.html" class="slide fz14 inline-block border-box ">加盟条件<i class="trans inline-block"></i></a>
+																	<a href="../../merchants-joining/i-3/index.html" class="slide fz14 inline-block border-box ">加盟流程<i class="trans inline-block"></i></a>
+																	<a href="../../merchants-joining/i-4/index.html" class="slide fz14 inline-block border-box ">加盟热线<i class="trans inline-block"></i></a>
+															</div>
+                            						</div>
+									</div>
+							<div class="list fl  ">
+					<a href="../../store-query/index.html" class="text-one fz14">服务专区</a>
+									</div>
+					</div>
+		<div class="other fr clear_both">
+			<div class="other-icon st1 fl">
+				<img class="img-one" src="../../images/img1.png" alt="">
+				<div class="form mouse">
+					<form id="header-search" class="clear_both" action="/products/" method="get" onsubmit="return headerSearch($(this));">
+						<input type="text" class="input fl fz14 border-box" name="Keyword" value="" placeholder="请输入产品关键词">
+						<input type="submit" class="sub fl" value="">
+					</form>
+				</div>
+			</div>
+			<div class="other-icon st2 fl">
+				<a href='../../fwcx.html' title='防伪查询'><img class="img-one" src="../../images/img2.png" alt=""></a>
+				<!-- <div class="Qr-code mouse"><img src="/u_file/photo/20190723/db0a1877cd.jpg" alt=""></div> -->
+			</div>
+			<div class="other-icon st3 in fz12 fl uppercase">
+				<img class="img-one" src="../../images/img3.png" alt="">Language
+				<!-- <div class="choose mouse">
+					<a href="?lang=cn" class="text fz14 inline-block">中文</a>
+					<a href="?lang=en" class="text fz14 inline-block">English</a>
+				</div> -->
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="nav-phone" class="hide">
+			<div class="slide inline-block fz20 ">
+        	<a href="../../index.html" class="text-one">首页</a>
+                    </div>
+			<div class="slide inline-block fz20 to">
+        	<a href="../../history/index.html" class="text-one">关于雅兰</a>
+                            <div class="two hide">
+                	                    	<div class="text-two fz16"><a href="../../history/index.html">发展历史</a></div>
+                                        	<div class="text-two fz16"><a href="../../honor/index.html">荣誉资质</a></div>
+                                        	<div class="text-two fz16"><a href="../../culture/index.html">企业文化</a></div>
+                                        	<div class="text-two fz16"><a href="../../join/index.html">加入我们</a></div>
+                                    </div>
+                    </div>
+			<div class="slide inline-block fz20 to">
+        	<a href="../index.html" class="text-one">新闻中心</a>
+                            <div class="two hide">
+                	                    	<div class="text-two fz16"><a href="index.html">雅兰新闻</a></div>
+                                        	<div class="text-two fz16"><a href="../i-2/index.html">床垫资讯</a></div>
+                                        	<div class="text-two fz16"><a href="../i-3/index.html">视频专区</a></div>
+                                    </div>
+                    </div>
+			<div class="slide inline-block fz20 to">
+        	<a href="../../sleep-institute/i-1/index.html" class="text-one">睡眠研究院</a>
+                            <div class="two hide">
+                	                    	<div class="text-two fz16"><a href="../../sleep-institute/i-1/index.html">如何选好床垫</a></div>
+                                        	<div class="text-two fz16"><a href="../../sleep-institute/i-2/index.html">睡眠生命科学</a></div>
+                                        	<div class="text-two fz16"><a href="../../sleep-institute/i-3/index.html">全球五星酒店供应</a></div>
+                                        	<div class="text-two fz16"><a href="../../sleep-institute/i-4/index.html">雅兰检测研究中心</a></div>
+                                    </div>
+                    </div>
+			<div class="slide inline-block fz20 to">
+        	<a href="../../brand/index.html" class="text-one">产品中心</a>
+                            <div class="two hide">
+                	                    	<div class="text-two fz16"><a href="../../products/i-6/index.html">雅兰床垫</a></div>
+                                        	<div class="text-two fz16"><a href="../../products/i-7/index.html">雅兰家纺</a></div>
+                                        	<div class="text-two fz16"><a href="../../products/i-9/index.html">雅兰A|DESIGN</a></div>
+                                        	<div class="text-two fz16"><a href="../../products/i-8/index.html">斯丽比迪</a></div>
+                                        	<div class="text-two fz16"><a href="../../products/i-11/index.html">造梦者</a></div>
+                                    </div>
+                    </div>
+			<div class="slide inline-block fz20 to">
+        	<a href="javascript:;" target='_blank' class="text-one">雅兰商城</a>
+                            <div class="two hide">
+                	                    	<div class="text-two fz16"><a href="javascript:;">雅兰京东旗舰店</a></div>
+                                        	<div class="text-two fz16"><a href="../../buy.html">雅兰天猫旗舰店</a></div>
+                                    </div>
+                    </div>
+			<div class="slide inline-block fz20 to">
+        	<a href="../../merchants-joining/i-1/index.html" class="text-one">招商加盟</a>
+                            <div class="two hide">
+                	                    	<div class="text-two fz16"><a href="../../merchants-joining/i-1/index.html">加盟优势</a></div>
+                                        	<div class="text-two fz16"><a href="../../merchants-joining/i-2/index.html">加盟条件</a></div>
+                                        	<div class="text-two fz16"><a href="../../merchants-joining/i-3/index.html">加盟流程</a></div>
+                                        	<div class="text-two fz16"><a href="../../merchants-joining/i-4/index.html">加盟热线</a></div>
+                                    </div>
+                    </div>
+			<div class="slide inline-block fz20 ">
+        	<a href="../../store-query/index.html" class="text-one">服务专区</a>
+                    </div>
+		<!-- <div class="slide inline-block fz20 none"><a href="?lang=cn" class="text-one">中文</a> / <a href="?lang=en" class="text-one">English</a></div> -->
+</div>	
+<div id="banner" class="fz0"><img src="../../u_file/photo/20191211/232293f70a.jpg" alt="" width="100%"></div>
+<div id="phone-banner" class="fz0 hide"><img src="../../u_file/photo/20191216/f6adc2203c.jpg" alt="" width="100%"></div>	<div id="category" class="in">
+	<div class="swiper-container">
+        <div class="swiper-wrapper">
+                            <div class="swiper-slide inline-block fz14 swiper-no-swiping wow fadeInRight on" data-wow-delay="0.0s"><a href="index.html">雅兰新闻</a></div>
+                            <div class="swiper-slide inline-block fz14 swiper-no-swiping wow fadeInRight " data-wow-delay="0.1s"><a href="../i-2/index.html">床垫资讯</a></div>
+                            <div class="swiper-slide inline-block fz14 swiper-no-swiping wow fadeInRight " data-wow-delay="0.2s"><a href="../i-3/index.html">视频专区</a></div>
+                    </div>
+    </div>
+</div>	<div id="info" class="list">
+							<div class="one cw1400 clear_both">
+									<div class="slide fl wow fadeInUp  " data-wow-delay="0.1s">
+						<div class="img"><a href="../../info-detail/i-197.html"><img src="../../u_file/photo/20211214/77c923f3e0.png" alt=""></a></div>
+						<div class="content m0 trans">
+							<div class="title fz18 cut"><a href="../../info-detail/i-197.html">50年鉴证品质，再50年续写辉煌</a></div>
+							<div class="more fz14">2021.12.14</div>
+							<div class="brief fz14">2021年12月11日，雅兰总部大厦奠基仪式盛大启幕,雅兰集团的新华章随之开启。</div>
+						</div>
+					</div>
+									<div class="slide fl wow fadeInUp phone-none " data-wow-delay="0.2s">
+						<div class="img"><a href="../../info-detail/i-192.html"><img src="../../tmp/thumbnail/04f5473607881ca4d898cd7884bfebba.460x280.1.jpg" alt=""></a></div>
+						<div class="content m0 trans">
+							<div class="title fz18 cut"><a href="../../info-detail/i-192.html">华纺股份×雅兰集团，打造优质家居新标杆</a></div>
+							<div class="more fz14">2021.07.29</div>
+							<div class="brief fz14">华纺股份有限公司与雅兰集团为打造家居行业优质服务新标杆进行了深度探讨</div>
+						</div>
+					</div>
+									<div class="slide fl wow fadeInUp  none" data-wow-delay="0.3s">
+						<div class="img"><a href="../../info-detail/i-182.html"><img src="../../u_file/photo/20210304/be1efa7af1.png" alt=""></a></div>
+						<div class="content m0 trans">
+							<div class="title fz18 cut"><a href="../../info-detail/i-182.html">再获殊荣！雅兰斩获“01企业金勋大奖2020-杰出健康床褥及床品”大奖</a></div>
+							<div class="more fz14">2021.03.03</div>
+							<div class="brief fz14">“01企业金勋大奖”旨在表彰全年具有卓越表现的香港企业，主办方“香港01”是香港主打多元化优质新闻及生活资讯的权威媒体，也是香港月总浏览数排名第一的知名新闻平台（统计截止至2020年10月）</div>
+						</div>
+					</div>
+							</div>
+				<div class="two cw1400">
+			<div class="item fz0">
+									<a href="../../info-detail/i-183.html" class="slide inline-block clear_both border-box wow fadeInUp" data-wow-delay="0.0s">
+						<div class="content fl">
+							<div class="title fz20 trans b">征途漫漫，惟有奋斗——雅兰高管开年战略部署会议圆满结束</div>
+                            <div class="time-two fz12 trans">2021.02.23</div>
+							<div class="brief fz14 trans"></div>
+						</div>
+						<div class="time fr trans border-box">
+							<div class="text-one trans fz30">02-23</div>
+							<div class="text-two trans fz14">2021</div>
+						</div>
+					</a>
+									<a href="javascript:;" class="slide inline-block clear_both border-box wow fadeInUp" data-wow-delay="0.1s">
+						<div class="content fl">
+							<div class="title fz20 trans b">本年度直播收官之作，直播间狂派20台华为Mate 40 Pro</div>
+                            <div class="time-two fz12 trans">2020.12.26</div>
+							<div class="brief fz14 trans"></div>
+						</div>
+						<div class="time fr trans border-box">
+							<div class="text-one trans fz30">12-26</div>
+							<div class="text-two trans fz14">2020</div>
+						</div>
+					</a>
+									<a href="javascript:;" class="slide inline-block clear_both border-box wow fadeInUp" data-wow-delay="0.2s">
+						<div class="content fl">
+							<div class="title fz20 trans b">创新驱动，雅兰携手顺联家居汇共探合作新模式</div>
+                            <div class="time-two fz12 trans">2020.12.10</div>
+							<div class="brief fz14 trans"></div>
+						</div>
+						<div class="time fr trans border-box">
+							<div class="text-one trans fz30">12-10</div>
+							<div class="text-two trans fz14">2020</div>
+						</div>
+					</a>
+									<a href="javascript:;" class="slide inline-block clear_both border-box wow fadeInUp" data-wow-delay="0.3s">
+						<div class="content fl">
+							<div class="title fz20 trans b">启航2021，雅兰与居然之家达成战略合作共识</div>
+                            <div class="time-two fz12 trans">2020.12.08</div>
+							<div class="brief fz14 trans"></div>
+						</div>
+						<div class="time fr trans border-box">
+							<div class="text-one trans fz30">12-08</div>
+							<div class="text-two trans fz14">2020</div>
+						</div>
+					</a>
+									<a href="javascript:;" class="slide inline-block clear_both border-box wow fadeInUp" data-wow-delay="0.4s">
+						<div class="content fl">
+							<div class="title fz20 trans b">5080万！雅兰感恩开仓第8季销售额再创新高</div>
+                            <div class="time-two fz12 trans">2020.11.30</div>
+							<div class="brief fz14 trans"></div>
+						</div>
+						<div class="time fr trans border-box">
+							<div class="text-one trans fz30">11-30</div>
+							<div class="text-two trans fz14">2020</div>
+						</div>
+					</a>
+							</div>
+			<div id="turn_page" class="wow fadeInUp">
+        	<span><a href='javascript:;' class='page_button in'>首页</a></span><span><a href='javascript:;' class='page_button'><img src='../../images/img22.jpg'></a></span><span><a href='javascript:;' class='page_item'>1</a></span><span><font class='page_item_current'>2</font></span><span><a href='page-3.html' class='page_item'>3</a></span><span><a href='page-4.html' class='page_item'>4</a></span><span><a href='page-5.html' class='page_item'>5</a></span><span><a href='page-6.html' class='page_item'>6</a></span><span><a href='page-7.html' class='page_item'>7</a></span><span><font class='page_item'>...</font></span><span><a href='page-36.html' class='page_item'>36</a></span><span class='page_last'><a href='page-3.html' class='page_button'><img src='../../images/img23.jpg'></a></span><span class='page_last'><a href='page-36.html' class='page_button in'>末页</a></span>	    <label>共&nbsp;36&nbsp;页&nbsp;&nbsp;到&nbsp;&nbsp;<input type="text" class="page_input text-center" size="3" value="2">&nbsp;&nbsp;页&nbsp;&nbsp;</label>
+	    <label class="submit"><input type="submit" class="page_submit" value="确定" onclick="page_submit();"></label>
+	    <input type="hidden" name="page_m" value="info">
+	    <input type="hidden" name="page_id" value="1">
+    </div>		</div>
+			</div>
+	<div id="footer" class="">
+	<div class="top">
+		<div class="cw1600 clear_both">
+							<div class="item fl wow fadeInUp " data-action="fadeInUp" data-wow-delay="0.0s">
+					<div class="title fz16 b"><a href="../../history/index.html">关于雅兰</a></div>
+											<div class="text-one fz14"><a href="../../history/index.html">发展历史</a></div>
+											<div class="text-one fz14"><a href="../../honor/index.html">荣誉资质</a></div>
+											<div class="text-one fz14"><a href="../../culture/index.html">企业文化</a></div>
+											<div class="text-one fz14"><a href="../../join/index.html">加入我们</a></div>
+									</div>
+							<div class="item fl wow fadeInUp " data-action="fadeInUp" data-wow-delay="0.1s">
+					<div class="title fz16 b"><a href="../index.html">新闻中心</a></div>
+											<div class="text-one fz14"><a href="index.html">雅兰新闻</a></div>
+											<div class="text-one fz14"><a href="../i-2/index.html">床垫资讯</a></div>
+											<div class="text-one fz14"><a href="../i-3/index.html">视频专区</a></div>
+									</div>
+							<div class="item fl wow fadeInUp " data-action="fadeInUp" data-wow-delay="0.2s">
+					<div class="title fz16 b"><a href="../../sleep-institute/i-1/index.html">睡眠研究院</a></div>
+											<div class="text-one fz14"><a href="../../sleep-institute/i-1/index.html">如何选好床垫</a></div>
+											<div class="text-one fz14"><a href="../../sleep-institute/i-2/index.html">睡眠生命科学</a></div>
+											<div class="text-one fz14"><a href="../../sleep-institute/i-3/index.html">全球五星酒店供应</a></div>
+											<div class="text-one fz14"><a href="../../sleep-institute/i-4/index.html">雅兰检测研究中心</a></div>
+									</div>
+							<div class="item fl wow fadeInUp " data-action="fadeInUp" data-wow-delay="0.3s">
+					<div class="title fz16 b"><a href="../../brand/index.html">产品中心</a></div>
+											<div class="text-one fz14"><a href="../../products/i-6/index.html">雅兰床垫</a></div>
+											<div class="text-one fz14"><a href="../../products/i-7/index.html">雅兰家纺</a></div>
+											<div class="text-one fz14"><a href="../../products/i-9/index.html">雅兰A|DESIGN</a></div>
+											<div class="text-one fz14"><a href="../../products/i-8/index.html">斯丽比迪</a></div>
+											<div class="text-one fz14"><a href="../../products/i-11/index.html">造梦者</a></div>
+									</div>
+							<div class="item fl wow fadeInUp " data-action="fadeInUp" data-wow-delay="0.4s">
+					<div class="title fz16 b"><a href="../../merchants-joining/i-1/index.html">招商加盟</a></div>
+											<div class="text-one fz14"><a href="../../merchants-joining/i-1/index.html">加盟优势</a></div>
+											<div class="text-one fz14"><a href="../../merchants-joining/i-2/index.html">加盟条件</a></div>
+											<div class="text-one fz14"><a href="../../merchants-joining/i-3/index.html">加盟流程</a></div>
+											<div class="text-one fz14"><a href="../../merchants-joining/i-4/index.html">加盟热线</a></div>
+									</div>
+							<div class="item fl wow fadeInUp none" data-action="fadeInUp" data-wow-delay="0.5s">
+					<div class="title fz16 b"><a href="../../store-query/index.html">服务专区</a></div>
+											<div class="text-one fz14"><a href="../../store-query/index.html">门店查询</a></div>
+									</div>
+			            <div class="item-phone fl hide">
+            	            		<div class="text fz12 b none"><a href="../../history/index.html">关于雅兰</a></div>
+                            		<div class="text fz12 b "><a href="../index.html">新闻中心</a></div>
+                            		<div class="text fz12 b "><a href="../../sleep-institute/i-1/index.html">睡眠研究院</a></div>
+                            		<div class="text fz12 b "><a href="../../brand/index.html">产品中心</a></div>
+                            		<div class="text fz12 b "><a href="../../merchants-joining/i-1/index.html">招商加盟</a></div>
+                            		<div class="text fz12 b "><a href="../../store-query/index.html">服务专区</a></div>
+                            </div>
+			<div class="item fr code wow fadeInUp" data-action="fadeInUp" data-wow-delay="0.6s">
+				<div class="title fz16 b">雅兰 香港1966</div>
+				<div class="text-one fz14">全国服务热线：<a class="fz20 phone" phone="">400-882-1966</a></div>
+				<div class="text-two fz12">地址：深圳龙岗南湾街道丹竹头工业区</div>
+				<div class="img"><img src="../../u_file/photo/20190712/14fdc47b28.jpg" alt=""></div>
+			</div>
+		</div>
+	</div>
+	<div class="bot">
+		<div class="cw1600 clear_both">
+			<div class="icp fz12 fl wow fadeInRight" data-action="fadeInRight">深圳雅兰实业（深圳）有限公司 © 版权所有 <a href="javascript:;" rel="nofollow" target="_blank">粤ICP备14066157</a> 
+			<a href="javascript:;" class="hide" target="_blank">深圳网站建设</a>
+			
+			<a href="javascript:;" class="hide" target="_blank">深圳联雅</a>
+		 </div>
+			<div class="links fr clear_both wow fadeInLeft" data-action="fadeInLeft">
+									<a href="javascript:;" target='_blank' class="list inline-block fl none"><img src="../../images/img17.png" alt="">官方微博</a>
+									<a href="javascript://" class="list inline-block fl "><img src="../../images/img18.png" alt="">官方微信<div class="ewm"><img src="../../u_file/photo/20190723/db0a1877cd.jpg" alt=""></div></a>
+							</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src='../../static/themes/default/js/website.js'></script>
+<link href='../../static/static/inc/css/online_chat.css' rel='stylesheet' type='text/css'>
+<script src="https://analytics.ooofoo.com/js/analytics.js?Number=U1BBRDAyNA=="></script>
+<script>
+	window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script></div>
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>
+<script>
+$('[videoli]').click(function(){
+	$.alert({
+		iframe:'/ajax/tv?u='+$(this).attr('videoli'),
+		tv:1,
+		wh:[1200,1200]
+	});
+});
+</script>
